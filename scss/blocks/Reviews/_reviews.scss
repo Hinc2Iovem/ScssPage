@@ -1,0 +1,40 @@
+.section-reviews-names-reviews{
+    display: flex;
+    gap: 3rem;
+    max-width: 106.3rem;
+    margin-bottom: 3rem;
+    align-items: center;
+
+    @media screen and (max-width: $mobile) {
+        margin-bottom: 1rem;
+    }
+}
+
+.section-reviews-names-item{
+    margin-bottom: 1rem;
+    min-width: 19.7rem;
+
+    @media screen and (max-width: $ipad) {
+        min-width: 10rem;
+    }
+
+    @media screen and (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.section-reviews-reviews-item{
+    max-width: 84.6rem;
+    padding: 3rem;
+    box-shadow: 0px 2px 10px 0px rgba(66, 72, 81, 0.4);
+    border-radius: 1rem;
+
+    .section-reviews-reviews-item-names{
+        display: none;
+
+        @media screen and (max-width: $mobile) {
+            display: block;  
+        }
+    }
+}
+

@@ -1,0 +1,252 @@
+@mixin mediaH1{
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 6.1rem;
+    color: #133AA0;
+}
+
+@mixin mediaH1-80{
+    font-size: 8rem;
+    line-height: 9.752rem;
+}
+
+@mixin H1-40{
+    font-size: 4rem;
+    line-height: 4.876rem;
+}
+
+@mixin H1-24{
+    font-size: 2.4rem;
+    line-height: 2.926rem;
+}
+
+
+@mixin H1{
+    font-size: 3rem;
+    line-height: 3.7rem;
+}
+
+
+@mixin mediaDekstopH2{
+    @media screen and (max-width: $dekstop){
+       
+    }
+}
+
+@mixin H2{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.438rem;
+}
+
+@mixin mediaLaptopH2{
+    @media screen and (max-width: $laptop) {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 2.194rem;
+    }
+}
+
+@mixin burgerH2{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.194rem;
+}
+
+@mixin mediaMobileH2{
+    @media screen and (max-height: $mobile) {
+        font-size: 1.6rem;
+        line-height: 1.95rem;
+    }
+}
+
+@mixin mediaLaptopParagh{
+    @media screen and (max-width: $laptop){
+            line-height: 1.8rem;
+            font-size: 1.5rem;
+    }
+}
+
+@mixin p-400{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.194rem;
+}
+
+@mixin p-400-white{
+    color:#F2F2F3;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    @media screen and (max-width: $laptop){ 
+    font-size: 1.5rem;
+    line-height: 1.829rem;
+
+    &:hover{
+        color: $light-blue;
+    }
+}
+}
+
+@mixin burgerP{
+    color: #F2F2F3;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.829rem;
+}
+
+@mixin p-400-blue{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #1C47B8;
+    @media screen and (max-width: 1000px){
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+}
+
+@mixin p-400-red{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: rgba(220, 71, 71, 1);
+    @media screen and (max-width: 1000px){
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+}
+
+@mixin p-400-catalog{
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.8rem;
+    line-height: 21.94px;
+    font-weight: 400;
+
+    @media screen and (max-width: $laptop) {
+        font-size: 1.5rem;
+        line-height: 18.29px;
+    }
+}
+
+@mixin p-600-tb{
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.8rem;
+    line-height: 21.94px;
+    font-weight: 600;
+
+    @media screen and (max-width: $laptop) {
+        font-size: 1.5rem;
+        line-height: 18.29px;
+    }
+}
+
+@mixin p-400-form{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.52rem;
+    color: #1A2C36;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+    }
+}
+
+@mixin p-400-blue-light{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.829rem;
+    color: #8BACFF;
+}
+
+@mixin p-600-black{
+    font-size: 1.5rem;
+    line-height: 1.829rem;
+    font-weight: 600;
+    color:black;
+}
+
+@mixin p-600-blue{
+    color: #1C47B8;
+    font-size: 1.5rem;
+    line-height: 1.829rem;
+    font-weight: 600;
+}
+
+@mixin p-form-blue{
+    color: #1C47B8;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.52rem;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+    }
+}
+
+@mixin p-form-black{
+    color: #2A2C33;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.52rem;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+    }
+}
+
+@mixin p-form-gray{
+    color: #BDC1C8;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 140%;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 1.5rem;
+        line-height: 140%;
+    }
+}
+
+@mixin btn{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.194rem;
+    text-transform: uppercase;
+    padding: 1.6rem 3.2rem;
+    box-shadow: 0px 2px 10px rgba(66, 72, 81, 0.4);
+    border: none;
+    min-width: 25.4rem;
+
+    // &:hover{
+    //     background-color: rgb(12, 54, 161);
+    // }
+
+    &:active{
+        scale: .95;
+        box-shadow: 0px 2px 10px rgba(66, 72, 81, 0.4);
+    }
+}
+
+@mixin btn-catalog{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.194rem;
+    text-transform: uppercase;
+    padding: 1.6rem 3.2rem;
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+    outline: none;
+
+    &:hover{
+        background-color: rgb(12, 54, 161);
+    }
+    &:active{
+        scale: .95;
+        box-shadow: 0px 2px 10px rgba(66, 72, 81, 0.4);
+    }
+}
+

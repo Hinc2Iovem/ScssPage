@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@300;400;600&family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+
+.container-m-60{
+    max-width: 130rem;
+    margin: 0 auto 6rem auto;
+    padding-inline: 1rem;
+
+    @media screen and (max-width: $laptop) {
+        margin: 0 auto 4rem auto;
+    }
+
+    @media screen and (max-width: $mobile) {
+        margin: 0 auto 3rem auto;
+    }
+}
+
+.container-m-30{
+    max-width: 130rem;
+    margin: 0 auto 3rem auto;
+    padding-inline: 1rem;
+
+    @media screen and (max-width: $laptop) {
+        margin: 0 auto 1rem auto;
+    }
+}
+
+.none{
+    display: none;
+}
+
+body.scroll-disabled{
+    overflow-y: hidden;
+}
+
+body{
+    overflow-x: hidden
+}
+
+
+
+/////////////////p
+
+.p-form-black{
+    @include p-form-black;
+}
+
+.p-form-blue{
+    @include p-form-blue;
+}
+
+.p-white{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    color: #F2F2F3;
+
+
+    @include mediaLaptopParagh;
+}
+
+
+
+
+
+
+/////////////////////p-400
+.p-400{
+    color: $p-400-color;
+
+    @include p-400;
+    @include mediaLaptopParagh;
+}
+
+.p-400-catalog{
+   @include p-400-catalog;
+}
+
+.p-400-white{
+
+    @include p-400-white;
+}
+
+.p-400-blue{
+    @include p-400-blue;
+}
+
+.p-400-red{
+    @include p-400-red;
+}
+
+.p-400-blue-light{
+    @include p-400-blue-light;
+}
+
+.hover-p-400{
+    transition: all 0.1s ease-in-out;
+    &:hover{
+        color:#1C47B8;
+        font-weight: 700;
+    }
+}
+
+.burgerP{
+    @include burgerP;
+}
+
+
+
+
+
+/////////////////////////////////////////p-600
+
+.p-600-black{
+    @include p-600-black;
+}
+
+.p-600-blue{
+    @include p-600-blue;
+}
+
+.p-600-tb{
+    color: rgb(0, 0, 0);
+    @include p-600-tb;
+}
+
+
+/////////////////////////////////btn
+
+.btn-blue{
+    color: #F2F2F3;
+    background-color: #1C47B8;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgb(12, 54, 161);
+    }
+
+    @include btn;
+    @include mediaLaptopParagh;
+}
+
+.btn-blue-catalog{
+    color: #F2F2F3;
+    background-color: #1C47B8;
+    @include mediaLaptopParagh;
+    @include btn-catalog;
+}
+
+.btn-white{
+   cursor: pointer;
+   color: #1C47B8;
+   background: #FFFFFF;
+
+   &:hover{
+    opacity: .9;
+   }
+
+   &:active{
+    scale: .9;
+    box-shadow: 1px 1px 4px 2px #1C47B8;
+   }
+   
+
+   @include btn;
+   @include mediaLaptopParagh;
+}
+
+
+
+
+
+
+
+////////////////////////////////////////h1
+.h1-50-30{
+    color: #133AA0;
+    font-weight: 700;
+
+    @media screen and (min-width: 1000px){
+      @include mediaH1;
+    }
+    @media screen and (max-width: 1000px) and (min-width: 480px){
+        @include H1;
+    }
+    @media screen and (max-width: 480px){
+        @include H1-24;
+    }
+}
+
+.h1-80-50{
+    color: #133AA0;
+    font-weight: 700;
+
+    @media screen and (min-width: 1000px){
+        @include mediaH1-80;
+      }
+      @media screen and (max-width: 1000px) and (min-width: 480px){
+          @include mediaH1;
+      }
+      @media screen and (max-width: 480px){
+          @include H1-40;
+      }
+}
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////h2
+.h2-blue{
+    color: #1C47B8;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+
+    @include H2;
+    @include mediaLaptopH2;
+    @include mediaMobileH2;
+}
+
+.h2-white{
+    color: white;
+
+    @include H2;
+    @include mediaLaptopH2;
+    @include mediaMobileH2;
+}
+
+.h2-burger{
+    padding: 2.5rem 0 0 0;
+    @include burgerH2;
+    text-align: center;
+}
+
+.h2-light-blue{
+    color: $light-blue;
+    text-transform: uppercase;
+
+
+    @include H2;
+    @include mediaLaptopH2;
+}
+
+.h2-black{
+    color: black;
+
+
+    @include H2;
+    @include mediaLaptopH2;
+}

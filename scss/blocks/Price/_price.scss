@@ -1,0 +1,30 @@
+.price-section-wrapper{
+    max-width: 106.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.table-row{
+    display: flex;
+    align-items: center;
+}
+
+.table-col{ 
+    border-collapse: collapse;
+    // max-width: fit-content;
+    width: 33%;
+    border: 1px solid rgba(189, 193, 200, 1);
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+td{
+    padding: 2rem;
+
+    .btn-blue{
+        width: 25rem;
+    }
+}

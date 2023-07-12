@@ -1,0 +1,19 @@
+.logo-text{
+    a{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.logo-text h2{
+    margin-bottom: 0rem;
+    text-transform: none;
+}
+
+@media screen and (max-width: $laptop) {
+    .logo-text{
+        display: flex;
+        gap: .6rem;
+    }
+}

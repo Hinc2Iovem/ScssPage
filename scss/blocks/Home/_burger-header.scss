@@ -1,0 +1,21 @@
+.burger-icon{
+    display: none;
+    cursor: pointer;
+
+    &:hover{
+        opacity: .7;
+    }
+
+    &:active{
+        scale: .9;
+    }
+}
+
+
+
+@media screen and (max-width: $laptop) {
+    .burger-icon{
+      display: block;  
+    }
+}
+                                                                

@@ -1,0 +1,43 @@
+@import './base/mixins';
+@import './base/variables';
+@import './base/reset';
+
+
+////////////////Home
+@import './blocks/Home/header';
+@import './blocks/Home/logo';
+@import './blocks/Home/burger-header';
+@import './blocks/Home/burger-content';
+@import './blocks/Home/hero';
+@import './blocks/Home/below-hero';
+@import './blocks/Home/text-section';
+@import './blocks/Home/price-of-certificate';
+@import './blocks/Home/why-us';
+@import './blocks/Home/reviews';
+@import './blocks/Home/form-section';
+@import './blocks/Home/footer';
+
+
+
+//////Modal-btn-blue
+
+@import './blocks/modals/blue-btn-modal';
+
+////////Delivery
+@import './blocks/delivery/delivery-grid';
+
+
+//////Catalog
+@import './blocks/Catalog/catalog';
+@import './blocks/Catalog/catalog-single';
+
+/////Contacts
+@import './blocks/Contacts/contacts';
+
+/////Reviews
+@import './blocks/Reviews/reviews';
+
+/////Price
+@import './blocks/Price/price';
+
+@import './base/base';

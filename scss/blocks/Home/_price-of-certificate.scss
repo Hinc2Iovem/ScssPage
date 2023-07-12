@@ -1,0 +1,76 @@
+.h2-black-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.price-text-box{
+    width: 100%;
+}
+
+.price-text-img{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+
+    @media screen and (max-width: $w900) {
+        flex-direction: column;
+    }
+
+    img{
+        @media screen and (max-width: $ipad) {
+            display: none;
+        }
+    }
+}
+
+.price-text-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.text-line{
+    width:max-content;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    white-space: nowrap;
+    gap: 1rem;
+
+    
+
+    @media screen and (max-width: $mobile) {
+        white-space: nowrap;
+
+        .wrap-text{
+            white-space: wrap;
+        }
+    }
+
+    @media screen and (max-width: $w360) {
+        white-space: wrap;
+        align-items: center;
+    }
+    
+    .p-400-blue{
+        @media screen and (max-width: $w600) {
+        white-space: nowrap;
+        }
+    }
+}
+
+.price-text-line{
+    display: inline;
+    width: 100%;
+    height: 1px;
+    background-color: #DADFE7;
+}
+
+.price-of-certificate{
+    margin-bottom: 6rem;
+}

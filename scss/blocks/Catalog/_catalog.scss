@@ -1,0 +1,67 @@
+.catalog-grid-box{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(41.333rem, 1fr));
+}
+
+.catalog-grid-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 0px rgba(66, 72, 81, 0.4);
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        scale: 1.01;
+        box-shadow: 0px 2px 10px 5px rgba(66, 72, 81, 0.4);
+
+    }
+    img{
+        width: 100%;
+    }
+
+    .h2-blue{
+        margin: 0;
+    }
+}
+
+.below-catalog-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.what-is-certificate{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    h2{
+        margin: 0;
+    }
+
+    p{
+        max-width: 955px;
+    }
+
+    &-ul{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        max-width: 92.5rem;
+
+       li::before{
+        content: '';
+        display: inline-flex;
+        margin-right: 2rem;
+        width: 1rem;
+        height: 1rem;
+        background: rgba(74, 90, 129, 1);
+        border-radius: 50%;
+       }
+    }
+     
+}
+

@@ -1,0 +1,48 @@
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 8rem;
+    max-width: 130rem;
+    padding-inline: 1rem;
+    margin: 0 auto 3rem auto;
+
+    p{
+        max-width: 108.3rem;
+    }
+
+    @media screen and (max-width: $mobile) {
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.contacts-google-map{
+    height: 50rem;
+    // margin-left: 8rem;
+    max-width: 130rem;
+    padding-inline: 1rem;
+    // padding-inline: 2rem;
+    // max-width: 106.3rem;
+    margin: 0 auto;
+
+    @media screen and (max-width: $mobile) {
+        height: 40rem;
+    }
+
+    #map{
+        height: 100%;
+
+        .ymaps-2-1-79-map{
+            max-width: 106.3rem;
+        }
+    }
+}
+
+.ymaps-2-1-79-traffic,
+.ymaps-2-1-79-controls__control_toolbar,
+.ymaps-2-1-79-controls__control,
+.ymaps-2-1-79-copyright__wrap{
+    display: none;
+}

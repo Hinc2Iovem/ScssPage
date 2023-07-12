@@ -1,0 +1,65 @@
+.header-divider{
+    width: 99%;
+    border: 1px solid #DADFE7;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+    @media screen and (max-width: $laptop) {
+        margin-bottom: 1rem;
+    }
+}
+
+.header__upper{
+    display: flex;
+    align-items: center;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+.header-section{
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.border-header{
+    border-left: 1px solid #DADFE7;
+    height: 8rem;
+    padding-inline:2rem;
+}
+
+.second-header-ul{
+    display: flex;
+    gap: 10rem;
+    margin-bottom: 3rem;
+}
+
+
+@media screen and (max-width: $laptop) {
+    .clock-time,
+    .btnHeader{
+        display: none;
+    }
+    .border-header{
+        height: 100%;
+    }
+    .header__logo{
+        height: 5rem;
+        width: 5rem;
+    }
+    .header__upper{
+        justify-content: space-between;
+    }
+    .second-header{
+        display: none;
+    }
+}
+
+@media screen and (max-width: $w600){
+    .phone-header{
+        display: none;
+    }
+    
+}
